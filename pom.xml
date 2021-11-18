@@ -29,19 +29,19 @@
         <dependency>
             <groupId>com.zhy</groupId>
             <artifactId>log-starter</artifactId>
-            <version>1.2.27-SNAPSHOT</version>
+            <version>1.2.27</version>
         </dependency>
 
         <dependency>
             <groupId>com.zhy</groupId>
             <artifactId>cache-starter</artifactId>
-            <version>1.4.5-SNAPSHOT</version>
+            <version>1.4.5</version>
         </dependency>
 
         <dependency>
             <groupId>com.zhy</groupId>
             <artifactId>pool-starter</artifactId>
-            <version>1.1.1-SNAPSHOT</version>
+            <version>1.1.1</version>
         </dependency>
 
         <dependency>
