@@ -1,4 +1,4 @@
-package com.boot.project.controller;
+package com.efunds.efundsapp.controller;
 
 import com.zhy.cache.service.CacheProviderService;
 import com.zhy.log.annotations.RequestLog;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/test")
-public class Controller {
+public class DemoController {
 
-    private final static Logger logger = LoggerFactory.getLogger(Controller.class);
+    private final static Logger logger = LoggerFactory.getLogger(DemoController.class);
 
     @Autowired(required = false)
     private CacheProviderService cacheProviderService;
