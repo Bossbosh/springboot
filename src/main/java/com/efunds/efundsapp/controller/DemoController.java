@@ -1,5 +1,6 @@
 package com.efunds.efundsapp.controller;
 
+import com.efunds.efundsapp.service.DemoService;
 import com.zhy.cache.service.CacheProviderService;
 import com.zhy.log.annotations.RequestLog;
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/demo")
 public class DemoController {
 
     private final static Logger logger = LoggerFactory.getLogger(DemoController.class);
@@ -19,10 +20,13 @@ public class DemoController {
     @Autowired(required = false)
     private CacheProviderService cacheProviderService;
 
+    @Autowired
+    private DemoService demoService;
+
     @GetMapping("/log")
     @RequestLog
-    public void test(){
-        System.out.println("test request.......");
+    public String test(){
+       return demoService.getDemoDesc();
     }
 
     @GetMapping("/setcache")
